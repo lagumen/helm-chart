@@ -17,7 +17,12 @@ spec:
         - env:
           - name: WWW_AB_SERVERS
 
-          image: nginx:alpine
+#         image: nginx:alpine
+          image:
+            repository: ghcr.io/lagumen/nginx-www-ab
+            pullPolicy: IfNotPresent   # Overrides the image tag; see Chart AppVersion
+            tag: ""
+
           name: www-ab-deployment
           ports:
           - containerPort: 80
