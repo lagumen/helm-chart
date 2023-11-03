@@ -2,10 +2,10 @@ apiVersion: v1
 entries:
   my-www-ab:
   - apiVersion: v1
-    created: "2023-11-03T05:17:52.246487972-05:00"
+    created: "2023-11-03T05:44:59.005494724-05:00"
     digest: 2f00ae2176f489ab968c65fc845d1f79b379af35c087c7aee3f6a579b80a42ec
     name: my-www-ab
     urls:
     - https://lagumen.github.io/helm-charts/my-www-ab-0.1.0.tgz
     version: 0.1.0
-generated: "2023-11-03T05:17:52.246343119-05:00"
+generated: "2023-11-03T05:44:59.005346302-05:00"
