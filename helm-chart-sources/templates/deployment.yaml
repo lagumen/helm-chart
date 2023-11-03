@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels: 
+  name: www-ab-deployment
+spec:
+  replicas: 8
+  selector:
+    matchLabels:
+      name: www-ab-deployment
+  template:
+    metadata:
+      labels:
+        name: www-ab-deployment
+    spec:
+      containers:
+        - env:
+          - name: WWW_AB_SERVERS
+
+          image: nginx:alpine
+          name: www-ab-deployment
+          ports:
+          - containerPort: 80
+            name: www-a
+          - containerPort: 80
+            name: www-b
+          volumeMounts:
+          - mountPath: /usr/share/nginx/html
+            name: www-persistent-storage
+      volumes:
+      - name: www-persistent-storage
+        persistentVolumeClaim:
+          claimName: my-claim

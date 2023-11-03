@@ -1,14 +1,11 @@
 apiVersion: v1
 entries:
-  helm-chart-test:
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2023-11-02T12:26:47.363058601-05:00"
-    description: A Helm chart for Kubernetes
-    digest: 49583c328493565a56610d24ee7024c5d97b8a67b6e442303912ec2a31fcb29d
-    name: helm-chart-test
-    type: application
+  my-www-ab:
+  - apiVersion: v1
+    created: "2023-11-03T05:17:52.246487972-05:00"
+    digest: 2f00ae2176f489ab968c65fc845d1f79b379af35c087c7aee3f6a579b80a42ec
+    name: my-www-ab
     urls:
-    - https://lagumen.github.io/helm-chart/helm-chart-test-0.1.0.tgz
+    - https://lagumen.github.io/helm-charts/my-www-ab-0.1.0.tgz
     version: 0.1.0
-generated: "2023-11-02T12:26:47.362607907-05:00"
+generated: "2023-11-03T05:17:52.246343119-05:00"
