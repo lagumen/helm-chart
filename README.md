@@ -1,7 +1,6 @@
 # Primary objective for establishing Git Repo for Helm Charts
 - Develop and demonstrate a proof of concept, showcasing the deployment and management of Kubernetes resources in a local Kubernetes cluster environment
 - This environment will be deployed across three bare metal worker nodes, and the main focus will be on demonstrating the effective use of Helm Charts to streamline the process
-- Main focus will be on demonstrating the effective use of Helm Charts to streamline the process.
 - Utilize the ability to deploy these nodes using a persistent storage and establish a persistent volume claim
 
 ## The proof of concept project will encompass the following key components:
